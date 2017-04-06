@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.message.toast.demo.toast_message.MainActivity">
+
+    <Button
+        android:id="@+id/bTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Left"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="52dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="showToastMessage"
+        app:layout_constraintHorizontal_bias="0.114" />
+
+    <Button
+        android:id="@+id/bTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Right"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/bTopLeft"
+        android:layout_marginEnd="83dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bTopLeft"
+        android:layout_marginRight="83dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="showToastMessage"/>
+
+    <Button
+        android:id="@+id/bBottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Left"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="360dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp"
+        android:onClick="showToastMessage"/>
+
+    <Button
+        android:id="@+id/bBottomRight"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:text="Bottom Right"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bBottomLeft"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="17dp"
+        android:onClick="showToastMessage" />
+
+    <Button
+        android:id="@+id/bCentrePos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centre(100, 200)"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bCentreNeg"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:onClick="showToastMessage"
+        />
+
+    <Button
+        android:id="@+id/bCentreNeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centre(100, -300"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="213dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bCentrePos"
+        android:layout_marginLeft="72dp"
+        android:onClick="showToastMessage"
+        />
+
+</android.support.constraint.ConstraintLayout>
